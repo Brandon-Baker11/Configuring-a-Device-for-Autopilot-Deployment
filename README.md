@@ -85,23 +85,31 @@ Under ***Recovery Options*** click ***Reset PC***, then click ***Remove everythi
 ![Screenshot16](https://github.com/Brandon-Baker11/Configuring-a-Device-for-Autopilot-Deployment/assets/140644499/aca78973-89b3-4355-ac43-f62d1d4e79a0)
 
 
-Click ***Local Reinstall*** and click ***Next***
+Click ***Local Reinstall*** and click ***Next*** until you get the option to select ***Reset*** and reset your system.
 ![Screenshot17](https://github.com/Brandon-Baker11/Configuring-a-Device-for-Autopilot-Deployment/assets/140644499/251ff396-712d-4196-9ddb-de1bdd595480)
 
 
+Once your computer has been reset, you should arrive at the screen below. Enter in the credentials for your Microsoft 365 account and click ***Sign in***
+![Screenshot18](https://github.com/Brandon-Baker11/Configuring-a-Device-for-Autopilot-Deployment/assets/140644499/272c0dd7-4ca1-43d9-afb4-c630a64b63cd)
 
 
+We are going to skip implementing Windows Hello for now. So, on the ***Use Windows Hello with your account*** screen, click ***Ok***. Then on the ***More information required*** pop-up click ***Next*** and close the window that was behind the ***More information required*** window. Then click ***Skip for now***
+![Screenshot20](https://github.com/Brandon-Baker11/Configuring-a-Device-for-Autopilot-Deployment/assets/140644499/9dbc559f-11d3-4413-ab3d-6069e5b3d762)
 
 
+Now that our system has logged in we can verify that the naming convention that we chose to include in the Autopilot deployment process works correctly. Right-click the Windows charm in the task bar and select ***Windows PowerShell (Admin)***.
+Click ***Yes*** on the UAC pop-up.
+![Screenshot21](https://github.com/Brandon-Baker11/Configuring-a-Device-for-Autopilot-Deployment/assets/140644499/4d42f3be-510e-4971-8ce0-f7c8673ae0d0)
 
 
+Once you're in PowerShell, type the following command:
+`hostname`
+Press ***Enter***
+![Screenshot22](https://github.com/Brandon-Baker11/Configuring-a-Device-for-Autopilot-Deployment/assets/140644499/a22e89aa-84e1-448a-b337-e18d21188720)
 
 
-
-
-
-
-
+And if you see your naming convention returned after the command, you have successfully deployed this device using Autopilot!
+![Screenshot23](https://github.com/Brandon-Baker11/Configuring-a-Device-for-Autopilot-Deployment/assets/140644499/b62ecc27-12ae-4d27-8de4-66520dd50ccf)
 
 
 
